@@ -1,10 +1,12 @@
-$hostname="bender"
+#!/bin/bash
+
+hostname="bender"
 
 # Machine Name
-#sudo scutil --set HostName $hostname
-#sudo scutil --set LocalHostName $hostname
-#sudo scutil --set ComputerName $hostname
-#sudo dscacheutil -flushcache
+sudo scutil --set HostName $hostname
+sudo scutil --set LocalHostName $hostname
+sudo scutil --set ComputerName $hostname
+sudo dscacheutil -flushcache
 
 # General
 defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
