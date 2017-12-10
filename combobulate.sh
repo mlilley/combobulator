@@ -5,6 +5,7 @@
 #   https://gist.github.com/meleyal/5890865
 #   https://github.com/paulirish/dotfiles/blob/master/.osx
 #   https://github.com/mathiasbynens/dotfiles/
+#   http://www.getmacapps.com/
 
 hostname="bender"
 temp="/tmp"
