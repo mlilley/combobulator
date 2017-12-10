@@ -46,11 +46,20 @@ defaults write NSGLobalDomain com.apple.swipescrolldirection -bool false
 # TODO: show volume in menu bar -> true
 
 # Finder
-defaults write com.apple.finder AppleShowAllFiles -bool true
-defaults write com.apple.finder WarnOnEmptyTrash -bool false
-defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder NewWindowTarget -string "PfHm"
+defaults write com.apple.finder NewWindowTargetPath -string "file:///Users/mike/"
+# TODO: sidebar settings (order of favorites)
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-# TODO: validate: defaults write com.apple.finder FXPreferredViewStyle -string "lst"
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+defaults write com.apple.finder FXEnableRemoveFromICloudDriveWarning -bool false
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+# TODO: remove from trash after 30 days -> false
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+defaults write com.apple.finder AppleShowAllFiles -bool true
+defaults write com.apple.finder ShowRecentTags -bool false
+defaults write com.apple.finder ShowStatusBar -bool true
+defaults write com.apple.finder ShowPathbar -bool true
 
 CFPreferencesAppSynchronize "com.apple.finder"
 
